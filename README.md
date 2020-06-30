@@ -1,2 +1,9 @@
 # yarn-depot
-A wip website mockup for a fictional handmade yarn store; learning/practicing flexbox, grid, and responsive layouts
+website mockup for fictional handmade yarn company
+
+Practicing core concepts:
+  Mobile first design
+  Flexbox
+  Grid
+  Navigation menus
+  Media Queries
