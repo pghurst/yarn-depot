@@ -229,6 +229,7 @@ nav {
   padding: 1rem 0;
 }
 
+#footer li:first-of-type,
 #footer p {
   font-weight: bold;
   padding: 0 1rem;
