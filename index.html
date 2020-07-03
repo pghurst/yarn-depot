@@ -11,53 +11,91 @@
   <body>
     <div id="container">
       <header id="header">
-  
+        <!-- top navigation -->
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-links-li"><a href="">Shop</a></li>
+            <li class="nav-links-li"><a href="">Patterns</a></li>
+            <li class="nav-links-li"><a href="">Tutorials</a></li>
+            <li class="nav-links-li"><a href="">About Us</a></li>
+          </ul>
+          <!-- burger for mobile nav -->
+          <div class="burger-menu">MENU</div>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+        <!-- hero image -->
         <div class="yarn_hero">
-          <img src="https://i.imgur.com/rsZW0hp.jpg" alt="a photo of yarn" class="yarn-img">
+          <img src="images/yarn.jpg" alt="a photo of yarn" class="yarn-img">
           <p>Handmade in the USA &bullet; Free Shipping + Tracking</p>
         </div>
-  
-        <nav>
-          <ul class="top_nav-ul">
-            <li><a href="">Shop</a></li>
-            <li><a href="">Search</a></li>
-            <li><a href="">About Us</a></li>
-          </ul>
-        </nav>
       </header>
   
       <main id="main">
-        <h1 class="main_title">Browse our collections</h1>
+        <!-- mission statement -->
+        <section class="mission-statement">
+          <h1>Handspun. Hand-dyed. Made with love</h1>
+          <p>Our mission is to share our true to color, super soft yarn with everyone and help spread the love of crochet and knitting. Check out our collections, featured items and tutorials and get started today!</p>
+        </section>
+  
+        <!-- collections photo gallery -->
+        <h2 class="section_title">Browse our collections</h2>
   
         <div class="photo_container">
           <div class="photo_gallery">
-            <a href="" target="_blank" rel="noreferrer noopener"><img src="images/wool.jpg" alt="wool yarn"></a>
+            <a href=""><img src="images/wool.jpg" alt="wool yarn"></a>
           </div>
         </div>
   
         <div class="photo_container">
           <div class="photo_gallery">
-            <a href="" target="_blank" rel="noreferrer noopener"><img src="images/baby-yarn.jpg" alt="baby yarn"></a>
+            <a href=""><img src="images/baby-yarn.jpg" alt="baby yarn"></a>
           </div>
         </div>
   
         <div class="photo_container">
           <div class="photo_gallery">
-            <a href="" target="_blank" rel="noreferrer noopener"><img src="images/chunky-yarn.jpg" alt="chunky yarn"></a>
+            <a href=""><img src="images/chunky-yarn.jpg" alt="chunky yarn"></a>
           </div>
         </div>
   
         <div class="photo_container">
           <div class="photo_gallery">
-            <a href="" target="_blank" rel="noreferrer noopener"><img src="images/crochet-hook.jpg" alt="crochet hooks"></a>
+            <a href=""><img src="images/crochet-hook.jpg" alt="crochet hooks"></a>
           </div>
         </div>
   
         <div class="clearfix"></div>
-        
+  
+        <!-- Testimonials -->
+        <div class="testimonials-container">
+          <h2 class="testimonials-title">Testimonials</h2>
+          <div class="testimonials">
+            <p><img src="images/stars.png" alt="photo of 5 stars"></p>
+            <p class="testimonials-header">Fantastic</p>
+            <p>Love this yarn! Colors don't fade, yarn is super soft. Definitely reccomend!</p>
+            <p class="italic">Mike D.</p>
+          </div>
+          <div class="testimonials">
+            <p><img src="images/stars.png" alt="photo of 5 stars"></p>
+            <p class="testimonials-header">Love love love!</p>
+            <p>Amazing quality, fast shipping and great customer service. I absolutely love these colors</p>
+            <p class="italic">Heather M.</p>
+          </div>
+          <div class="testimonials">
+            <p><img src="images/stars.png" alt="photo of 5 stars"></p>
+            <p class="testimonials-header">Best Yarn Ever</p>
+            <p>The best. Color was exactly as shown on the website. Yarn feels soft but strong and my scarf came out looking amazing.</p>
+            <p class="italic">John P.</p>
+          </div>
+        </div>
+  
         <!-- featured items gallery -->
         <div class="featured_items">
-          <h1>Featured Items</h1>
+          <h2 class="section_title">Featured Items</h2>
   
           <div class="photo_container relative">
             <div class="pinterest_button">
@@ -66,8 +104,8 @@
             <div class="photo_gallery">
               <a href="" target="_blank" rel="noreferrer noopener">
                 <img src="//unsplash.it/800/600" alt="">
-                <figcaption>Tropical</figcaption>
-                <figcaption>$45.00 USD</figcaption>
+                <p>Tropical</p>
+                <p>$45.00 USD</p>
               </a>
             </div>
           </div>
@@ -79,8 +117,8 @@
             <div class="photo_gallery">
               <a href="" target="_blank" rel="noreferrer noopener">
                 <img src="//unsplash.it/800/600" alt="">
-                <figcaption>Forrest</figcaption>
-                <figcaption>$45.00 USD</figcaption>
+                <p>Forrest</p>
+                <p>$45.00 USD</p>
               </a>
             </div>
           </div>
@@ -92,8 +130,8 @@
             <div class="photo_gallery">
               <a href="" target="_blank" rel="noreferrer noopener">
                 <img src="//unsplash.it/800/600" alt="">
-                <figcaption>Desert</figcaption>
-                <figcaption>$45.00 USD</figcaption>
+                <p>Desert</p>
+                <p>$45.00 USD</p>
               </a>
             </div>
           </div>
@@ -105,8 +143,8 @@
             <div class="photo_gallery">
               <a href="" target="_blank" rel="noreferrer noopener">
                 <img src="//unsplash.it/800/600" alt="">
-                <figcaption>Ombre</figcaption>
-                <figcaption>$45.00 USD</figcaption>
+                <p>Ombre</p>
+                <p>$45.00 USD</p>
               </a>
             </div>
           </div>
@@ -118,8 +156,8 @@
             <div class="photo_gallery">
               <a href="" target="_blank" rel="noreferrer noopener">
                 <img src="//unsplash.it/800/600" alt="">
-                <figcaption>Summer</figcaption>
-                <figcaption>$45.00 USD</figcaption>
+                <p>Summer</p>
+                <p>$45.00 USD</p>
               </a>
             </div>
           </div>
@@ -131,8 +169,8 @@
             <div class="photo_gallery">
               <a href="" target="_blank" rel="noreferrer noopener">
                 <img src="//unsplash.it/800/600" alt="">
-                <figcaption>Autumn</figcaption>
-                <figcaption>$45.00 USD</figcaption>
+                <p>Scarlet</p>
+                <p>$30.00 USD</p>
               </a>
             </div>
           </div>
@@ -144,8 +182,21 @@
             <div class="photo_gallery">
               <a href="" target="_blank" rel="noreferrer noopener">
                 <img src="//unsplash.it/800/600" alt="">
-                <figcaption>Rainbow</figcaption>
-                <figcaption>$45.00 USD</figcaption>
+                <p>Deep Smoke</p>
+                <p>$20.00 USD</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="photo_container relative">
+            <div class="pinterest_button">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+            </div>
+            <div class="photo_gallery">
+              <a href="" target="_blank" rel="noreferrer noopener">
+                <img src="//unsplash.it/800/600" alt="">
+                <p>Morning Sun</p>
+                <p>$15.00 USD</p>
               </a>
             </div>
           </div>
@@ -157,30 +208,139 @@
             <div class="photo_gallery">
               <a href="" target="_blank" rel="noreferrer noopener">
                 <img src="//unsplash.it/800/600" alt="">
-                <figcaption>Jungle</figcaption>
-                <figcaption>$45.00 USD</figcaption>
+                <p>Fall Leaves</p>
+                <p>$35.00 USD</p>
               </a>
             </div>
           </div>
+
+          <div class="photo_container relative">
+            <div class="pinterest_button">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+            </div>
+            <div class="photo_gallery">
+              <a href="" target="_blank" rel="noreferrer noopener">
+                <img src="//unsplash.it/800/600" alt="">
+                <p>Purple Haze</p>
+                <p>$45.00 USD</p>
+              </a>
+            </div>
+          </div>
+  
+          <div class="photo_container relative">
+            <div class="pinterest_button">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+            </div>
+            <div class="photo_gallery">
+              <a href="" target="_blank" rel="noreferrer noopener">
+                <img src="//unsplash.it/800/600" alt="">
+                <p>Rain</p>
+                <p>$25.00 USD</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="photo_container relative">
+            <div class="pinterest_button">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+            </div>
+            <div class="photo_gallery">
+              <a href="" target="_blank" rel="noreferrer noopener">
+                <img src="//unsplash.it/800/600" alt="">
+                <p>Cerulean</p>
+                <p>$25.00 USD</p>
+              </a>
+            </div>
+          </div>
+  
+          <div class="photo_container relative">
+            <div class="pinterest_button">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+            </div>
+            <div class="photo_gallery">
+              <a href="" target="_blank" rel="noreferrer noopener">
+                <img src="//unsplash.it/800/600" alt="">
+                <p>Fiery</p>
+                <p>$35.00 USD</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="photo_container relative">
+            <div class="pinterest_button">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+            </div>
+            <div class="photo_gallery">
+              <a href="" target="_blank" rel="noreferrer noopener">
+                <img src="//unsplash.it/800/600" alt="">
+                <p>Autumn</p>
+                <p>$35.00 USD</p>
+              </a>
+            </div>
+          </div>
+  
+          <div class="photo_container relative">
+            <div class="pinterest_button">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+            </div>
+            <div class="photo_gallery">
+              <a href="" target="_blank" rel="noreferrer noopener">
+                <img src="//unsplash.it/800/600" alt="">
+                <p>Rainbow</p>
+                <p>$25.00 USD</p>
+              </a>
+            </div>
+          </div>
+  
+          <div class="photo_container relative">
+            <div class="pinterest_button">
+              <a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+            </div>
+            <div class="photo_gallery">
+              <a href="" target="_blank" rel="noreferrer noopener">
+                <img src="//unsplash.it/800/600" alt="">
+                <p>Jungle</p>
+                <p>$15.00 USD</p>
+              </a>
+            </div>
+          </div>
+        </div>
   
         <div class="clearfix"></div>
-          
+  
       </main>
   
+      <!-- Footer -->
       <footer id="footer">
-        <!-- social media -->
-        <div class="social_media">
-          <p>Follow us on social media</p>
-          <ul class="social_media-ul">
-            <li><a href="" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="" target="_blank" rel="noreferrer noopener"><i class="fab fa-pinterest-p"></i></a></li>
-            <li><a href="" target="_blank" rel="noreferrer noopener"><i class="fab fa-etsy"></i></a></li>
+        <div class="footer-legal_items">
+          <ul>
+            <p>Shop</p>
+            <li><a href="">Store</a></li>
+            <li><a href="">Search</a></li>
+            <li><a href="">Shipping Policies</a></li>
           </ul>
         </div>
+        <div class="footer-important_links">
+          <ul>
+            <p>Learn About Us</p>
+            <li><a href="">F.A.Q.</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social_media">
+          <p>Follow us on social media!</p>
+          <a href="" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter"></i></a>
+          <a href="" target="_blank" rel="noreferrer noopener"><i class="fab fa-pinterest-p"></i></a>
+          <a href="" target="_blank" rel="noreferrer noopener"><i class="fab fa-etsy"></i></a>
+        </div>
       </footer>
+    </div>
   
-      <!-- pinterest "pin-it" button -->
-      <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <!-- pinterest "pin-it" button -->
+    <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <!-- javascript functions-->
+    <script src="apps.js"></script>
   
   </body>
