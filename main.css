@@ -1,3 +1,5 @@
+/* This is a landing page mock-up, practicing core concepts such as flexbox, grid, media queries and responsive layouts. Friendly suggestions and advice welcome. All images courtesy of Unsplash */
+
 /* Global */
 * {
   box-sizing: border-box;
@@ -6,20 +8,25 @@
 }
 
 :root {
-  --clr-black: #000;
-  --clr-white: #fff;
-  --clr-gray: #848484;
-  --clr-purple: #9A2EFE;
+  --black: #000;
+  --white: #fff;
+  --gray: #848484;
+  --drkgray: #424242;
+  --purple: #e5cfe5;
   --fw-normal: 400;
   --fw-bold: 700;
 }
 
 body {
-  background-color: var(--clr-white);
-  color: var(--clr-black);
+  background-color: var(--white);
+  color: var(--black);
   font-family: "Roboto Condensed", sans-serif;
   width: 100%;
   height: 100vh;
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 #container {
@@ -28,30 +35,60 @@ body {
 }
 
 #main {
-  padding-bottom: 3.75rem;
+  padding-bottom: 1rem;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /* Navigation Bar */
-.top_nav-ul {
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  height: 2.5em;
-  list-style-type: none;
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #fff;
+}
+
+.nav-links {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.top_nav-ul a {
-  color: var(--clr-gray);
-  padding: 0 0.75rem;
+.nav-links a {
+  color: var(--drkgray);
   text-decoration: none;
-  font-size: 1.25rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  padding: 0 1em;
 }
 
-.top_nav-ul a:hover {
+.nav-links a:hover {
   text-decoration: underline;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 1.56em; /* 25px */
+  height: 0.187em; /* 3px */
+  background-color: var(--drkgray);
+  margin: 0.312em; /* 5px */
+  transition: all 0.3s ease;
+}
+
+.burger-menu {
+  display: none;
 }
 
 /* Logo */
@@ -67,21 +104,36 @@ body {
 }
 
 .yarn_hero p {
-  color: var(--clr-purple);
+  color: var(--gray);
   text-align: center;
-  font-size: 1.25em;
+  font-size: calc(1rem + .5vw);
+}
+
+/* mission statement */
+.mission-statement {
+  text-align: center;
+  color: var(--drkgray);
+  background-color: var(--purple);
+  padding: 3rem;
+  margin: 2rem 0;
+  box-shadow: 0 0.25rem 0.5rem 0 rgb(128, 0, 128, 0.3);
+  transition: 0.4s;
+}
+
+.mission-statement:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgb(128, 0, 128, 0.5);
 }
 
 /* Responsive Image Gallery */
-.main_title {
-  color: var(--clr-purple);
-  text-align: left;
+.section_title {
+  color: var(--drkgray);
+  text-align: center;
   padding: 0 0.375rem;
   margin-top: 2rem;
 }
 
 .photo_container {
-  padding: .625rem .625rem 0 .625rem;
+  padding: 0.625rem 0.625rem 0 0.625rem;
   float: left;
   width: 24.9999%;
 }
@@ -102,16 +154,43 @@ body {
   clear: both;
 }
 
+/* testimonials */
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 2.5rem 0;
+  padding: 3rem;
+  text-align: center;
+  background-color: var(--purple);
+  color: var(--drkgray);
+  box-shadow: 0 0.25rem 0.5rem 0 rgb(128, 0, 128, 0.3);
+  transition: 0.4s;
+}
+
+.testimonials-container:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgb(128, 0, 128, 0.5);
+}
+
+.testimonials {
+  /* sets margin between each review */
+  margin: 1.5rem 0;
+}
+
+.testimonials-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* featured items gallery */
 .featured_items {
   margin-bottom: 1.5rem;
 }
 
-.featured_items h1 {
-  color: var(--clr-purple);
-  text-align: left;
-  padding: 0 .375rem;
-  margin-top: 1em;
+.featured_items p {
+  font-size: 1rem;
+  color: var(--drkgray);
 }
 
 .relative {
@@ -122,7 +201,7 @@ body {
   position: absolute;
   top: 1.56rem;
   left: 2.5rem;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -135,76 +214,218 @@ body {
 
 .photo_container a {
   text-decoration: none;
-  color: var(--clr-gray);
+  color: var(--gray);
   text-align: center;
 }
 
-/* footer */
+/* footer - needs work */
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3.75rem;
-  background-color: #424242;
-  color: var(--clr-white);
-}
-
-/* social media */
-.social_media {
-  text-align: center;
-  font-size: 1.25rem;
-  letter-spacing: 1px;
-  line-height: 1.5;
-}
-
-.social_media-ul {
-  list-style-type: none;
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: var(--purple);
+  color: var(--drkgray);
+  font-size: calc(1rem + 0.5vw);
+  padding: 1rem 0;
 }
 
-.social_media-ul a {
-  padding: 0 .31rem;
-  color: var(--clr-white);
+#footer p {
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+#footer a {
+  text-decoration: none;
+  color: var(--drkgray);
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-important_links a,
+.footer-legal_items a {
+  padding: 0 1rem;
+}
+
+.footer-social_media {
+  margin: 2rem 0;
+  padding: 1rem;
+  outline: 1px solid var(--drkgray);  
+  text-align: center;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 31.25rem) { /* 500 px */
+@media screen and (max-width: 31.25rem) {
+  /* 500 px */
   .photo_container {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 43.75rem) { /* 700 px */
+@media screen and (max-width: 43.75rem) {
+  /* 700 px */
   .photo_container {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
-@media (min-width: 43.75rem) { /* 700 px */
-  #main {
-    margin: 0 2rem;
+@media screen and (max-width: 48rem) {
+  /* 768px */
+  body,
+  html {
+    /* removes scrollbar for offscreen nav links */
+    overflow-x: hidden;
   }
-  
-  .yarn_hero {
-    margin: 2rem 6rem 1rem 6rem;
+  nav {
+    justify-content: flex-end;
   }
-  
-  .featured_items {
-    margin: 2rem 0;
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 8vh; /* height of the nav bar */
+    height: 92vh; /* nav menu will now take the rest of the screen */
+    width: 40%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateX(100%); /* moves everything offscreen */
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block; /* this is set to none for larger sizes */
+  }
+  .burger-menu {
+    display: block;
+    letter-spacing: 2px;
+    color: var(--drkgray);
+  }
+  .nav-links-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 1px solid #D0A9F5;
+    width: 100%;
+  }
+  .nav-links-li:hover {
+    background-color: #D0A9F5;
+  }
+  .nav-links a:hover {
+    text-decoration: none;
+  }
+  .mission-statement,
+  .testimonials-container,
+  #footer {
+    background-color: #F2E0F7;
+  }
+  .photo_container p:first-of-type {
+    text-decoration: underline #D0A9F5;
   }
 }
 
-@media (min-width: 56.25rem) { /* 900 px */
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (min-width: 34.5rem) { /* 552px */
+  .footer-social_media {
+    /* remove margin once social media links jump into 1 row with other footer items */
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+}
+
+@media screen and (min-width: 37.5rem) {
+  /* 600 px */
+  .testimonials-container {
+    /*changed to row for larger screens */
+    flex-direction: row;
+    flex-wrap: wrap; /* not enough space with the h2, allows it to wrap to the next 'row' */
+    align-items: flex-start; /* aligns each fake review to account for difference in <p> length */
+    padding: 1rem 0;
+  }
+
+  .testimonials {
+    width: calc(
+      33.33% - 16px
+    ); /* sets width of each review to 33% minus the font size */
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  .testimonials-title {
+    width: 100%; /* along with wrap, pushes the reviews onto a separate row */
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 43.75rem) {
+  /* 700 px */
   #main {
+    /* added margin to right and left for larger screens */
+    margin: 0 2rem;
+  }
+
+  .yarn_hero {
+    margin: 0 6rem 1rem 6rem;
+  }
+
+  .featured_items {
+    margin: 2rem 0;
+  }
+
+  .section_title {
+    text-align: left;
+  }
+  #footer {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 56.25rem) {
+  /* 900 px */
+  #main {
+    /* increase left and right margin for larger screens */
     margin: 0 4rem;
   }
-  
+
   .yarn_hero {
-    margin: 2rem 8rem 1rem 8rem;
+    margin: 0 8rem 1rem 8rem;
   }
-  
+
   .featured_items {
     margin: 1.5rem 0;
   }
